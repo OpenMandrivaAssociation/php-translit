@@ -6,7 +6,7 @@
 Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
 Version:	0.5
-Release:	%mkrel 15
+Release:	%mkrel 16
 Group:		Development/PHP
 License:	PHP License
 URL:		http://derickrethans.nl/translit.php
@@ -40,15 +40,7 @@ echo "#define PHP_ICONV_H_PATH <%{_includedir}/iconv.h>" > ext/iconv/php_php_ico
 echo "#define PHP_ICONV_IMPL \"glibc\"" > ext/iconv/php_php_iconv_impl.h
 
 %build
-export CFLAGS="%{optflags}"
-export CXXFLAGS="%{optflags}"
-export FFLAGS="%{optflags}"
-
-%if %mdkversion >= 200710
-export CFLAGS="$CFLAGS -fstack-protector"
-export CXXFLAGS="$CXXFLAGS -fstack-protector"
-export FFLAGS="$FFLAGS -fstack-protector"
-%endif
+%serverbuild
 
 phpize
 %configure2_5x \
