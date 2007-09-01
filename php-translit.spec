@@ -6,7 +6,7 @@
 Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
 Version:	0.5
-Release:	%mkrel 16
+Release:	%mkrel 17
 Group:		Development/PHP
 License:	PHP License
 URL:		http://derickrethans.nl/translit.php
