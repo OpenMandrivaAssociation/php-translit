@@ -13,6 +13,7 @@ URL:		http://derickrethans.nl/translit.php
 Source0:	http://pecl.php.net/get/translit-%{version}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This extension allows you to transliterate text in non-latin characters (such
