@@ -5,12 +5,12 @@
 
 Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
-Version:	0.5
-Release:	%mkrel 19
+Version:	0.6.0
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://derickrethans.nl/translit.php
-Source0:	http://pecl.php.net/get/translit-%{version}.tar.bz2
+Source0:	http://pecl.php.net/get/translit-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 Epoch:		1
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
