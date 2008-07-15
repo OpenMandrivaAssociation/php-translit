@@ -6,14 +6,14 @@
 Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
 Version:	0.6.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Development/PHP
 License:	PHP License
 URL:		http://derickrethans.nl/translit.php
 Source0:	http://pecl.php.net/get/translit-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 Epoch:		1
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This extension allows you to transliterate text in non-latin characters (such
