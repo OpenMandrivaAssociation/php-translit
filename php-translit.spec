@@ -5,8 +5,8 @@
 
 Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
-Version:	0.6.0
-Release:	%mkrel 21
+Version:	0.6.1
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://derickrethans.nl/translit.php
@@ -27,17 +27,6 @@ punctuation and spacing.
 
 %setup -q -n translit-%{version}
 [ "../package.xml" != "/" ] && mv ../package.xml .
-
-# work around...
-mkdir -p ext/iconv
-echo "#" > ext/iconv/php_iconv.h
-echo "#" > ext/iconv/php_have_bsd_iconv.h
-echo "#" > ext/iconv/php_have_libiconv.h
-echo "#define HAVE_GLIBC_ICONV 1" > ext/iconv/php_have_glibc_iconv.h
-echo "#define HAVE_ICONV 1" > ext/iconv/php_have_iconv.h
-echo "#define ICONV_SUPPORTS_ERRNO 1" > ext/iconv/php_iconv_supports_errno.h
-echo "#define PHP_ICONV_H_PATH <%{_includedir}/iconv.h>" > ext/iconv/php_php_iconv_h_path.h
-echo "#define PHP_ICONV_IMPL \"glibc\"" > ext/iconv/php_php_iconv_impl.h
 
 %build
 %serverbuild
