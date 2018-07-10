@@ -7,7 +7,7 @@ Summary:	Transliterates non-latin character sets to latin
 Name:		php-%{modname}
 Epoch:		1
 Version:	0.6.1
-Release:	13
+Release:	14
 Group:		Development/PHP
 License:	PHP License
 Url:		http://derickrethans.nl/translit.php
@@ -19,7 +19,7 @@ This extension allows you to transliterate text in non-latin characters (such
 as Chinese, Cyrillic, Greek etc) to latin characters. Besides the
 transliteration the extension also contains filters to upper- and lowercase
 latin, cyrillic and greek, and perform special forms of transliteration such as
-converting ligatures such as the Norwegian "æ" to "ae" and normalizing
+converting ligatures such as the Norwegian "Ã¦" to "ae" and normalizing
 punctuation and spacing.
 
 %prep
