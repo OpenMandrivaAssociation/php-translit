@@ -10,7 +10,7 @@ Version:	0.6.1
 Release:	15
 Group:		Development/PHP
 License:	PHP License
-Url:		http://derickrethans.nl/translit.php
+Url:		https://derickrethans.nl/translit.php
 Source0:	http://pecl.php.net/get/translit-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 
